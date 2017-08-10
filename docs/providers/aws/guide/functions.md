@@ -230,6 +230,8 @@ The Lambda function execution role must have permissions to create, describe and
 
 You can add environment variable configuration to a specific function in `serverless.yml` by adding an `environment` object property in the function configuration. This object should contain a key/value collection of strings:
 
+**Note:** Environment variables will *not* be deployed with `sls deploy function`. In order to deploy environment variables you must run `sls deploy`.
+
 ```yml
 # serverless.yml
 service: service-name
